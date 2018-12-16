@@ -6,13 +6,12 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 <link rel="stylesheet" href="styles.css">
-<body></body>
-<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" 
-id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()"
-  class="w3-bar-item w3-button">Close Menu</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
-</nav>
+<body>
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+        class="w3-bar-item w3-button">Close Menu</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+      </nav>
 
 <!--Top Menu -->
 <div class="w3-top">
@@ -27,19 +26,39 @@ id="mySidebar">
 <!-- Page Content -->
 <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
   <!--First Grid Photo -->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <div class="w3-quarter">
-      <img src="https://hips.hearstapps.com/del.h-cdn.co/assets/cm/15/10/54f6bc91ab54f_-_pasta-penne-mdn.jpg" alt="penne" style="width:100%">
-      <h2>Penne</h2>
-      <p>Created in 1865 by Giovanni Battista Capurro, from the San Martino d'Albaro Region of Italy.</p>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCY9q7N4wb78IckXFsYcYKK7-WVRUb07dQdZ34YI3ij6Gj-Ixt" alt="conchigilie" style="width:100%">
-      <h2>Penne</h2>
-      <p>Reminiscent of shells, this pasta is pronounced as con-keel-yay and can come in a variety of sizes.</p>
+  <div class="w3-row-padding w3-padding-16 w3-center">
+      <div class="w3-quarter">
+          <img src="https://hips.hearstapps.com/del.h-cdn.co/assets/cm/15/10/54f6bc91ab54f_-_pasta-penne-mdn.jpg" alt="penne" style="width:100%">
+          <h2>Penne</h2>
+          <p>Created in 1865 by Giovanni Battista Capurro, from the San Martino d'Albaro Region of Italy.</p>
+      </div>
+      <div class="w3-quarter">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCY9q7N4wb78IckXFsYcYKK7-WVRUb07dQdZ34YI3ij6Gj-Ixt" alt="conchigilie" style="width:100%">
+          <h2>Conchiglie</h2>
+          <p>Reminiscent of shells, this pasta is pronounced as con-keel-yay and can come in a variety of sizes.</p>
+      </div>
+      <div class="w3-quarter">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvLSr1J65guZfqWg5lZEDwftTKzrI2fonMfwbh_Iir8mW2Ujxi8Q" alt="conchigilie" style="width:100%">
+          <h2>Rigatoni</h2>
+          <p>Tube shaped pasta that comes from the Italian word rigato which means "ridged" or "lined".</p>
+      </div>
     </div>
   </div>
   </div>
 </div>
+
+<!-- Second Grid -->
+
 </body>
 </html>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 
 
